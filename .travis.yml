@@ -1,0 +1,12 @@
+language: c
+
+compiler:
+  - gcc
+
+git:
+  depth: 1
+
+script:
+  - cd postgres
+  - ./configure
+  - make -j $(nproc)
